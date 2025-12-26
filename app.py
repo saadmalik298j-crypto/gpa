@@ -121,6 +121,15 @@ if st.button("Check My Readiness"):
     for tip in tips[status]:
         st.write(f"- {tip}")
 
-# 5. Disclaimer
+# 5. Resources & Chill Zone
+st.divider()
+st.header("Step 4: Resources & Balance")
+st.markdown("""
+Maintaining a healthy work-life balance is crucial during placement season. 
+- For extra study materials and guides, visit these [useful links](https://shadowfight2.site/useful-links).
+- Remember to take short breaks to recharge. Some students enjoy a quick [gaming session](https://hungrysharkevolutionmod.com) to stay fresh and avoid burnout.
+""")
+
+# 6. Disclaimer
 st.divider()
 st.caption("Disclaimer: This tool is for informational purposes only. Placement success depends on various factors including market conditions, communication skills, and individual company requirements.")
