@@ -7,6 +7,19 @@ st.set_page_config(
     layout="centered"
 )
 
+# SEO Verification
+st.markdown(
+    """
+    <script>
+    var meta = document.createElement("meta");
+    meta.name = "google-site-verification";
+    meta.content = "6ip2TLa4btNdf6cXB4mz7C8Urj3A2oE2DLhwd3kPj0k";
+    document.getElementsByTagName("head")[0].appendChild(meta);
+    </script>
+    """,
+    unsafe_allow_html=True
+)
+
 # Custom CSS for better aesthetics
 st.markdown("""
     <style>
