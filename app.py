@@ -142,7 +142,7 @@ Maintaining a healthy work-life balance is crucial during placement season.
 - For extra study materials and guides, visit these [useful links](https://shadowfight2.site/useful-links).
 - Remember to take short breaks to recharge. Some students enjoy a quick [gaming session](https://hungrysharkevolutionmod.com) to stay fresh and avoid burnout.
 """)
-import streamlit as st
+
 
 # Section Title
 st.markdown(
