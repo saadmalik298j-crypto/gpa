@@ -181,16 +181,3 @@ for idx, calc in enumerate(calculators):
         """,
         unsafe_allow_html=True
     )
-
-# Footer note
-st.markdown(
-    """
-    <p style='text-align:center;color:#6b7280;margin-top:15px;font-size:14px;'>
-    Stay on top of your grades with these calculators and plan your academic progress effectively.
-    </p>
-    """,
-    unsafe_allow_html=True
-)
-# 6. Disclaimer
-st.divider()
-st.caption("Disclaimer: This tool is for informational purposes only. Placement success depends on various factors including market conditions, communication skills, and individual company requirements.")
