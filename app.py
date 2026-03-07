@@ -142,7 +142,55 @@ Maintaining a healthy work-life balance is crucial during placement season.
 - For extra study materials and guides, visit these [useful links](https://shadowfight2.site/useful-links).
 - Remember to take short breaks to recharge. Some students enjoy a quick [gaming session](https://hungrysharkevolutionmod.com) to stay fresh and avoid burnout.
 """)
+import streamlit as st
 
+# Section Title
+st.markdown(
+    """
+    <h2 style="text-align:center;color:#1f2937;margin-bottom:15px;">📊 GPA Calculators Hub</h2>
+    <p style="text-align:center;color:#4b5563;font-size:16px;line-height:1.6;margin-bottom:25px;">
+    Quickly calculate grades for school, higher secondary, and university using our accurate GPA calculators.
+    </p>
+    """,
+    unsafe_allow_html=True
+)
+
+# Define calculators
+calculators = [
+    {"name":"SSC GPA Calculator","url":"https://cgpahub.com/tools/ssc-gpa-calculator","desc":"Quickly convert board grades into GPA.","color":"#3b82f6"},
+    {"name":"HSC GPA Calculator","url":"https://cgpahub.com/tools/hsc-gpa-calculator","desc":"Estimate higher secondary GPA accurately.","color":"#dc2626"},
+    {"name":"SGPA Calculator","url":"https://cgpahub.com/tools/sgpa-calculator","desc":"Convert semester grades into GPA.","color":"#059669"},
+    {"name":"UOG GPA Calculator","url":"https://cgpahub.com/tools/uog-gpa-calculator","desc":"University of Gujrat GPA calculator.","color":"#f97316"},
+    {"name":"UofT GPA Calculator","url":"https://cgpahub.com/tools/uoft-gpa-calculator","desc":"Convert University of Toronto grades into GPA.","color":"#be185d"},
+    {"name":"Purdue GPA Calculator","url":"https://cgpahub.com/tools/purdue-gpa-calculator","desc":"Estimate GPA for Purdue University courses.","color":"#2563eb"},
+    {"name":"ASU GPA Calculator","url":"https://cgpahub.com/tools/asu-gpa-calculator","desc":"Arizona State University GPA calculator.","color":"#7c3aed"},
+    {"name":"UF GPA Calculator","url":"https://cgpahub.com/tools/uf-gpa-calculator","desc":"University of Florida GPA estimation tool.","color":"#b45309"},
+]
+
+# Display cards in 2-column layout
+cols = st.columns(2)
+for idx, calc in enumerate(calculators):
+    col = cols[idx % 2]
+    col.markdown(
+        f"""
+        <div style="background:#ffffff;padding:15px;border-radius:10px;border-left:5px solid {calc['color']};margin-bottom:15px;box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+            <h4 style="color:{calc['color']};margin-bottom:5px;">{calc['name']}</h4>
+            <p style="color:#374151;margin-bottom:8px;font-size:14px;">{calc['desc']}</p>
+            <a href="{calc['url']}" target="_blank" style="text-decoration:none;font-weight:600;color:#2563eb;">Open Calculator</a>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+# Footer note
+st.markdown(
+    """
+    <p style='text-align:center;color:#6b7280;margin-top:15px;font-size:14px;'>
+    Stay on top of your grades with these calculators and plan your academic progress effectively.
+    </p>
+    """,
+    unsafe_allow_html=True
+)
 # 6. Disclaimer
 st.divider()
 st.caption("Disclaimer: This tool is for informational purposes only. Placement success depends on various factors including market conditions, communication skills, and individual company requirements.")
